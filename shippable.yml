@@ -36,6 +36,7 @@ before_script:
   - cd ..
   - rm -rf phpredis
   - sudo service php7.0-fpm restart
+  - sudo service redis-server restart
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - wget https://phar.phpunit.de/phpunit.phar
