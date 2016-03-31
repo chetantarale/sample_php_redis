@@ -37,7 +37,7 @@ before_script:
   - rm -rf phpredis
   - sudo service php7.0-fpm restart
   - sudo service redis-server restart
-  - ls /etc/php/7.0/mods-available/redis.ini
+  - ls /etc/php/7.0/mods-available
   - echo "extension=redis.so">/etc/php/7.0/mods-available/redis.ini
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
