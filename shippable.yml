@@ -11,6 +11,7 @@ services:
 
 before_script: 
   - currentLocation="$PWD"
+  - sudo service redis-server restart
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - wget https://phar.phpunit.de/phpunit.phar
