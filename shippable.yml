@@ -11,6 +11,7 @@ services:
 
 before_script: 
   - currentLocation="$PWD"
+  - find / -name redis.so
   - sudo service redis-server restart
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
