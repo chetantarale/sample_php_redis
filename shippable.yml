@@ -10,6 +10,7 @@ services:
   - redis
 
 before_script: 
+  - php --version
   - currentLocation="$PWD"
   - find / -name redis.so
   - sudo service redis-server restart
