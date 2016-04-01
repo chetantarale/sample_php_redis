@@ -1,4 +1,4 @@
-build_image: chetantarale/u14php7pls:testext
+build_image:chetantarale/u14php7pls:testext1
 
 language: 
   - php
