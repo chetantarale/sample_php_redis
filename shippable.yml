@@ -39,7 +39,7 @@ before_script:
   - sudo service redis-server restart
   - ls /etc/php/7.0/mods-available
   - find / -name redis.so
-  - echo "extension=redis.so" > /etc/php/7.0/mods-available/redis.ini
+  #- echo "extension=redis.so" > /etc/php/7.0/mods-available/redis.ini
   - ln -sf /etc/php/7.0/mods-available/redis.ini /etc/php/7.0/fpm/conf.d/20-redis.ini
   - ln -sf /etc/php/7.0/mods-available/redis.ini /etc/php/7.0/cli/conf.d/20-redis.ini
   - service php7.0-fpm restart
